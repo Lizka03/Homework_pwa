@@ -1,0 +1,48 @@
+{
+  "short_name": "ToDo",
+  "name": "To-Do List App",
+  "lang": "ru",
+  "categories": ["productivity", "lifestyle"],
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/tasks",
+  "display": "standalone",  
+  "background_color": "#f4f4f9",
+  "theme_color": "#333",
+  "shortcuts": [
+    {
+      "name": "Выполнено",
+      "url": "/tasks/completed",
+      "icons": [
+        {
+          "src": "/completed_todo_icon.png",
+          "sizes": "64x64",
+          "type": "image/png",
+          "purpose": "any maskable"
+        }
+      ]
+    },
+    {
+      "name": "Не выполнено",
+      "url": "/tasks/not-completed",
+      "icons": [
+          {
+            "src": "/pending_todo_icon.png",
+            "sizes": "64x64",
+            "type": "image/png",
+            "purpose": "any maskable"
+          }
+      ]
+  }
+  ]
+}

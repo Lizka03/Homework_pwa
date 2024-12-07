@@ -1,0 +1,172 @@
+/* Общие стили */
+body {
+  background-color: #bfd2d8; /* Бледно-голубой цвет фона */
+  margin: 0; /* Убираем отступы */
+  height: 100vh; /* Устанавливаем высоту экрана на 100% */
+  display: flex; /* Используем flexbox для выравнивания */
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+}
+
+.App {
+  text-align: center;
+  background-color: #bfd2d8;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 800px; /* Ограничиваем максимальную ширину */
+  margin: auto;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+input[type="text"], 
+input[type="date"] {
+  padding: 10px;  
+  width: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px;
+  background-color: #4eb5d1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3b7bac;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  background-color: #e0ffe0;
+}
+
+li button {
+  background-color: red;
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: darkred;
+}
+
+/* Новый стиль для даты */
+li .date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-left: 15px;
+  flex-shrink: 0; /* Чтобы дата не сжималась */
+}
+
+input[type="date"] {
+  max-width: 180px; /* Ограничиваем ширину для поля выбора даты */
+}
+
+/* Стиль для навигационных ссылок */
+div a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+div a:hover {
+  color: #3b7bac;
+}
+
+/* Стиль для активной ссылки */
+div a.active {
+  color: #2a6f8f;
+  text-decoration: underline;
+}
+
+/* Стиль для страницы с деталями задачи */
+.task-detail {
+  background-color: #fefefe;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+}
+
+.task-detail h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.task-detail p {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.task-detail p strong {
+  color: #333;
+}
+
+.task-detail .task-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.task-detail .task-buttons button {
+  background-color: #4eb5d1;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-detail .task-buttons button:hover {
+  background-color: #3b7bac;
+}
+.details-button {
+  padding: 8px 15px;
+  background-color: #4caf50; /* Зеленый цвет фона */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.details-button:hover {
+  background-color: #45a049; /* Тёмно-зеленый цвет при наведении */
+}
+
+.details-button:active {
+  background-color: #388e3c; /* Ещё более тёмный цвет при клике */
+}
